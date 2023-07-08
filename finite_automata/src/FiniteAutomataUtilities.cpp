@@ -1,9 +1,6 @@
 #include "../FiniteAutomataUtilities.h"
 #include "../../components/config.h"
 
-
-#define MAX_TRANSITIONS 3
-
 namespace
 {
 std::vector<char> parse_alphabet(const std::vector<std::string>& alphabet)
@@ -112,10 +109,12 @@ namespace universal_fa::utils
 
         auto test_strings = config.get_vector<std::string>("test_strings");
         builder.set_test_strings(test_strings);
+
+        auto num_transitions = config.get<int>("num_transitions", 2);
         
         
         std::vector<std::vector<std::string>> transitions;
-        for (int i = 0; i < MAX_TRANSITIONS; ++i)
+        for (int i = 0; i < num_transitions; ++i)
         {
             auto transition = config.get_vector<std::string>("transitions." + std::to_string(i));
             if (transition.empty())
