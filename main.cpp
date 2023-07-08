@@ -10,5 +10,6 @@ int main(int argc, char** argv)
     }
 
     universal_fa::FiniteAutomataTester fa_tester(argv[1]);
+    fa_tester.run();
     return 0;
 }

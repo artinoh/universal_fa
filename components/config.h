@@ -50,7 +50,7 @@ namespace universal_fa::components
         }
 
         template <typename T>
-        std::vector<T> get_vector(const std::string& key, char delim, std::optional<std::vector<T>> default_value = std::nullopt) const
+        std::vector<T> get_vector(const std::string& key, char delim = ',', std::optional<std::vector<T>> default_value = std::nullopt) const
         {
             auto it = m_data.find(key);
             if (it == m_data.end())
