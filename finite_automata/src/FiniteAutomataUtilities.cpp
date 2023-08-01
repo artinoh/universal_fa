@@ -1,8 +1,17 @@
 #include "../FiniteAutomataUtilities.h"
 #include "../../components/config.h"
 
+
+//naked namespace to keep functions private to this file
 namespace
 {
+
+/*
+The alphabet is a list of ranges or single characters.
+A range is defined as a character, a dash, and another character.
+For example, the alphabet "a-z" contains all lowercase letters.
+this function parses the alphabet and returns a vector of all characters in the alphabet.
+*/
 std::vector<char> parse_alphabet(const std::vector<std::string>& alphabet)
 {
     //if alphabet is a single character, add it to the alphabet
@@ -33,6 +42,14 @@ std::unordered_map<int, bool> create_final_states(const std::vector<int>& final_
     }
     return result;
 }
+
+/*
+There can be multiple transitions so we have a vector defining the transitions for each state.
+The string defining the transitions for each state is a comma separated list of transitions which can be either a single character or a range of characters.
+For example, the transition "a-z=1,0-9=2" means that there is a transition from state 0 to state 1 for all lowercase letters and a transition from state 0 to state 2 for all digits.
+
+This function parses the transitions and returns a map of transitions for each state.
+*/
 
 std::unordered_map<int, universal_fa::transition_map> parse_transition(const std::vector<std::vector<std::string>>& transitions)
 {
@@ -86,6 +103,11 @@ std::unordered_map<int, universal_fa::transition_map> parse_transition(const std
 }
 namespace universal_fa::utils
 {
+
+    /*
+    the public function to build a finite automata from a file
+    */
+
     FiniteAutomata build_fa_from_file(const std::string& file_path)
     {
         std::cout << "Building FA from file: " << file_path << std::endl;

@@ -7,6 +7,13 @@
 #include <vector>
 #include <iostream>
 
+
+/*
+This class is used to parse a config file and store the key-value pairs in a map.
+
+*/
+
+
 namespace universal_fa::components
 {
     class Config
@@ -18,7 +25,7 @@ namespace universal_fa::components
             std::ifstream file(filename);
             
             if (!file.is_open())
-                throw std::runtime_error("Failed to open file");
+                throw std::runtime_error("Failed to open file ");
 
             std::string line;
             while (std::getline(file, line))

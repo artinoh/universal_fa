@@ -2,6 +2,12 @@
 #include "FiniteAutomataUtilities.h"
 #include <vector>
 
+/*
+Constructs a vector of finite automata from a directory of automata files.
+and runs the process method on each automata so they each process their test strings.
+
+*/
+
 namespace universal_fa
 {
 

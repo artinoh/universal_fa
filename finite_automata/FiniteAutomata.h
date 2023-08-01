@@ -8,6 +8,16 @@ namespace universal_fa
 {
 using transition_map = std::unordered_map<char, int>;
 
+/*
+
+This class is used to represent a finite automata. 
+It has a name, description, initial state, final states, alphabet, and test strings.
+It also has a method to process a string and return whether or not it is accepted by the automata.
+The test strings are stored internally and can be used to test the automata via the process method.
+
+*/
+
+
 class FiniteAutomata
 {
 public:

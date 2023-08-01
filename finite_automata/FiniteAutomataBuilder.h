@@ -1,6 +1,10 @@
 #pragma once
 #include "FiniteAutomata.h"
 
+/*
+Builder class for FiniteAutomata.
+*/
+
 namespace universal_fa
 {
 class FiniteAutomataBuilder
