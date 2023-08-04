@@ -21,7 +21,7 @@ The test strings are stored internally and can be used to test the automata via 
 class FiniteAutomata
 {
 public:
-    FiniteAutomata() { std::cout << "I am a finite automata being born" << std::endl;}
+    FiniteAutomata() = default;
     ~FiniteAutomata() = default;
 
     void process();
