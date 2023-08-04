@@ -1,6 +1,3 @@
-Sure, here's a basic example of a `README.md` file for your project.
-
-
 ## Getting Started
 
 To clone this project, you'll need [Git](https://git-scm.com) installed on your computer.
