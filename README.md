@@ -1,9 +1,21 @@
 Sure, here's a basic example of a `README.md` file for your project.
 
 
-# Project Title
+## Getting Started
 
-Your project description goes here. Try to include the objective of the project, what problems it solves, or its unique selling points.
+To clone this project, you'll need [Git](https://git-scm.com) installed on your computer.
+
+```bash
+# Clone this repository
+$ git clone https://github.com/artinoh/universal_fa.git
+
+# Go into the repository
+$ cd yourprojectname
+```
+
+# Project Title
+universal_fa
+Run test strings on config defined DFA's
 
 ## Dependencies
 
