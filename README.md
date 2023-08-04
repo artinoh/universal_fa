@@ -7,7 +7,7 @@ To clone this project, you'll need [Git](https://git-scm.com) installed on your 
 $ git clone https://github.com/artinoh/universal_fa.git
 
 # Go into the repository
-$ cd yourprojectname
+$ cd universal_fa
 ```
 
 ## Universal_FA
