@@ -10,7 +10,7 @@ $ git clone https://github.com/artinoh/universal_fa.git
 $ cd yourprojectname
 ```
 
-#Universal_FA
+## Universal_FA
 Run test strings on config defined DFA's
 
 ## Dependencies
