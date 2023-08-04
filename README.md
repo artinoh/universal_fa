@@ -37,5 +37,3 @@ After compiling the project, you can run the project with:
 ```bash
 ./run.sh
 ```
-
-```
